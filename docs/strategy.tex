@@ -1,0 +1,11 @@
+\section{Strategy}
+The strategy used to obtain the best model was simply to do some quick, lost cost experiments to establish a baseline 
+for accuracy. There were 4 models that were explored briefly at this stage of the project. The four models explored were a simple feed forward neural network, a convolutional neural network, a random forests classifier and a naive bayes classifier. 
+The text preprocessing done was handled by Spacy alone. In addition to these 4 models, I also used FastText, Facebook's text classification system to quickly determine the best accuracy I would be able to obtain. 
+The accuracy scores for these simple models are listed below. 
+\vspace{3pt}
+\input{simple_models.tex}
+\vspace{3pt}
+
+Please note that the simple feed forward neural network was not able to be trained due to a OOM exception, even when using a 8 node GPU cluster, it was clearly evident that the model 
+needed to be simplified and this lead to convolutional neural networks being explored.
