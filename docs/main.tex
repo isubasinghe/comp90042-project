@@ -1,5 +1,5 @@
 %
-% File acl2021.tex
+% File main.tex
 %
 %% Based on the style files for EMNLP 2020, which were
 %% Based on the style files for ACL 2020, which were
@@ -23,6 +23,7 @@
 \usepackage{amsmath}
 \usepackage{booktabs}
 \usepackage[capitalise]{cleveref}
+\usepackage{graphicx}
 \setlength {\marginparwidth }{2cm}
 \usepackage{todonotes}
 
@@ -42,6 +43,7 @@
 % smaller than 5cm (the original size); we will check this
 % in the camera-ready version and ask you to change it back.
 
+\graphicspath{ {./images} }
 
 \newcommand\BibTeX{B\textsc{ib}\TeX}
 
@@ -71,18 +73,28 @@ whereas the more complex one does.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \input{strategy.tex}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% BERT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{bert.tex}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% OTHER SECTION 1
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\nocite{baris_schmelzeisen_staab_2019}
-\nocite{ma_gao_wong_2018}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% OTHER SECTION 2
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
 \nocite{burchell}
+\nocite{ma_gao_wong_2018}
+\nocite{baris_schmelzeisen_staab_2019}
 \nocite{Gardner2017AllenNLP}
-
-
 
 \bibliographystyle{acl_natbib}
 \bibliography{main}
 
-%\appendix
+%\appendx
 
 
 
